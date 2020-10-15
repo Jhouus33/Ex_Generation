@@ -50,6 +50,7 @@ public class ex1 {
 		public String getEndereco() {
 			String enderecoCompleto = rua+", "+cidade+", "+estado;
 			return enderecoCompleto;
+			
 		}
 	
 	

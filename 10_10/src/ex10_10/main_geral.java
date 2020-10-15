@@ -8,6 +8,10 @@ public class main_geral {
 		
 		ex1 endereco = new ex1("Rua dos Bobos","São Paulo", "SP");
 		System.out.println(endereco.getEndereco());
+		
+		ex2 passagemAerea = new ex2("123456", "15:10", "Jonathan Ferreira", "ABCDEF", "GRU", "SYD", "EXECUTIVA", "7", "A");
+		System.out.println(passagemAerea.getPassagem());
+		
 	}
 	
 	
