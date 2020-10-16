@@ -6,20 +6,27 @@ package ex10_10;
 
 public class ex2 {
 	
-	private String nome;
-	private String aeronave;
-	private String numeroVoo;
-	private String localizador;
-	private String horario;
-	private String from;
-	private String to;
-	private String classeAviao;
-	private String fileira;
-	private String poltrona;
+	private String modelo;
+	private int velocidadeMax_km_h;
+	private String motoresEmpuxo;
+	private float comprimento_m;
+	private double autonomia_km;
+	
+	public ex2(String modelo, int velocidadeMax_km_h, String motoresEmpuxo, float comprimento_m, double autonomia_km){
+		this.modelo = modelo;
+		this.velocidadeMax_km_h = velocidadeMax_km_h;
+		this.motoresEmpuxo = motoresEmpuxo;
+		this.comprimento_m = comprimento_m;
+		this.autonomia_km = autonomia_km;
+		
+	}
 	
 	
-	public String getPassagem() {
-		String passagem = "VOO: "+numeroVoo+"EMPBARQUE: "+horario+"\nNOME/NAME: "+nome+"\nLOCALIZADOR: "+localizador+"\nDE/FROM: "+from+"\nPARA/TO: "+to+"\n CLASSE: "+classeAviao+"ASSENTO: "+poltrona+"FILEIRA: "+fileira;
-		return passagem;
+	public String getModelo() {
+		String modeloAviao = "NOME: "+modelo+"\t VELOCIDADE MAX.: "+velocidadeMax_km_h+"\t Motor/Empuxo: "+motoresEmpuxo+"\nCOMPRIMENTO: "+comprimento_m+"\t AUTONOMIA: "+autonomia_km;
+		return modeloAviao;
+	}
+	public void getComparacao() {
+		
 	}
 }
